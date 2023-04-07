@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Bootstrap - elementos flutuantes</title>
+</head>
+
+<body style="margin-bottom: 200px;padding: 16px;">
+    <!--Elementos flutuantes-->
+    <div style="border: 3px solid green;" class="clearfix">
+        <div class="bg-success float-left">Float Left</div>
+        <div class="bg-warning float-right">Float Right</div>
+        <div class="bg-danger float-none">Float None</div>
+    </div>
+    <!-- Posicionamento fixo - top e bottom-->
+    <!-- O elemento flutuante é fixo no topo ou no rodapé da página -->
+    <h1 class="fixed-top bg-success text-sm-center">Título do conteúdo fixo</h1>
+    <br>
+    <!-- Float responsivo -->
+    <!-- class float-<tela:sm,md,lg,xl>-alinhamento: left, right -->
+    <div class="float-sm-right">tela &gt;= 576px</div> <!-- 576px SMALL -->
+    <div class="float-md-right">tela &gt;= 768px</div> <!-- 768px MEDIUM -->
+    <div class="float-lg-right">tela &gt;= 992px</div> <!-- 992px LARGE -->
+    <div class="float-xl-right">tela &gt;= 1200px</div> <!-- 1200px EXTRA LARGE -->
+    <br>
+    <!-- Colar no topo (sticky)-->
+    <!-- O elemento sticky é fixo no topo da página, mas apenas mediante rolagem até que sua posição original alcance o topo
+     o que é diferente do fixed, que vai ficar fixo no topo desde sempre e sempre-->
+    <ul class="list-inline bg-warning sticky-top">
+        <li class="list-inline-item">Item 1</li>
+        <li class="list-inline-item">Item 2</li>
+        <li class="list-inline-item">Item 3</li>
+    </ul>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
